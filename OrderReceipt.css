@@ -1,0 +1,13 @@
+body{
+    background-color:gray;
+}
+*{
+    box-sizing:border-box;
+}
+.serviceList{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    height:30px;
+    font-size:18px;
+}

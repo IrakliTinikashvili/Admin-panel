@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>
+            Users & Roles
+        </title>
+        <link rel="stylesheet" href="Users&Roles.css">
+    </head>
+    <body>
+        <div class="flexForContent">
+            <div style="background-color:#272236;width:120px;">
+                <div style="display:flex;flex-direction: column;align-items: center;">
+                    <img  style="margin-top:18px;" src="assets/Bird.svg" width="60px" height="60px">
+                    <a href="Dashboard.html">
+                    <img  style="margin-top:60px;" src="assets/menu.svg" width="40px" height="40px">
+                    </a>
+                    <span class="leftColumnHeaders">DASHBOARD</span>
+                    <a href="Issues.html">
+                        <img  src="assets/bell.svg" class="leftColumnImages">
+                    </a>
+                    <span class="leftColumnHeaders">ISSUES</span>
+                    <a href="Payments.html">
+                        <img  src="assets/cash.svg" class="leftColumnImages">
+                    </a>
+                    <span class="leftColumnHeaders">PAYMENTS</span>
+                    <a href="Users&Roles.html">
+                        <img  src="assets/Clients.svg" class="leftColumnImages">
+                    </a>
+                    <span class="leftColumnHeaders">USERS & ROLES</span>
+                </div>
+            </div>
+            <div style="width:100%; display:flex;flex-direction:column;">
+                <div class="stickyHeader flexForHeader" style="width:100%;margin:0px;border:none;box-shadow:4px 4px 12px rgba(0, 0, 0, 0.1);height:80px;">
+                    <div style="padding:18px;font-family:Gilroy;">
+                        <div style="font-size:20px;">Thursday</div>
+                        <div style="font-size:20px;">November 2020</div>
+                    </div>
+                    <div style="padding:18px;font-family:Gilroy;display:flex;align-items:center;">
+                        <span style="font-size:14px;padding:15px;">HI JOHN!</span>
+                        <img  style="border-radius:50px;" src="assets/Boy.png" width="50px" height="50px">
+                    </div>
+                </div>
+                <div style="padding:50px; width:100%;">
+                    <div style="margin-top:30px;" class="flexForHr">
+                        <hr  style="width:calc((100% - 200px)/2);color:gray;">
+                        <div style="width:200px;font-family:Gilroy;font-size:18px;text-align:center;font-weight:bold;">ACTUAL USERS</div>
+                        <hr  style="width:calc((100% - 200px)/2);color:gray;">
+                    </div>
+                </div>
+                <div id="idForWindow1" class="modal1"> 
+                    <div style="display:flex;justify-content:center;align-items:center;">
+                        <div style="width:500px;background-color: white;border:0px;">
+                            <div>
+                                <img style="float:right;padding:10px;cursor:pointer;" src="assets/Close.svg" onclick="hideWindow1()">
+                            </div>
+                            <div style="padding:50px;">
+                                <div style="font-size:40px;font-weight:bold;">Invite user</div>
+                                <div style="margin-top:50px;">
+                                    <div>
+                                        <form>
+                                            <input class="inputsForInvite" style="border-bottom:1px solid rgb(32, 32, 32);letter-spacing: 1px;font-size:18px;" type="text"  placeholder="First Name">
+                                        </form>
+                                        <form>
+                                            <input class="inputsForInvite" style="border-bottom:1px solid rgb(32, 32, 32);letter-spacing: 1px;font-size:18px;" type="text"  placeholder="Last Name">
+                                        </form>
+                                        <form>
+                                            <input class="inputsForInvite" style="border-bottom:1px solid rgb(32, 32, 32);letter-spacing: 1px;font-size:18px;" type="email"  placeholder="Email">
+                                        </form>
+                                        <form>
+                                            <input class="inputsForInvite" style="border-bottom:1px solid rgb(32, 32, 32);letter-spacing: 1px;font-size:18px;" type="text"  placeholder="Role (optional)">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div style="margin-top:50px;">
+                                    <button class="sendButton" style="letter-spacing:2px;">SEND INVITE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="idForWindow2" class="modal2">
+                    <div style="display:flex;justify-content:center;align-items:center;">
+                        <div style="width:500px;background-color: white;border:0px;">
+                            <div>
+                                <img style="float:right;padding:10px;cursor:pointer;" src="assets/Close.svg" onclick="hideWindow2()">
+                            </div>
+                            <div style="padding:50px;">
+                                <div style="font-size:40px;font-weight:bold;">Edit user</div>
+                                <div style="text-align:center;margin-top:20px;">
+                                    <img style="border-radius:50px;" src="assets/Boy.png">
+                                    <div style="font-weight:bold;font-size:14px;margin-top:15px;font-weight:bold;">BILL THEMNOW</div>
+                                </div>
+                                <div style="margin-top:30px;">
+                                    <div>
+                                        <form>
+                                            <input class="inputForEdit" style="border-bottom:1px solid rgb(32, 32, 32);letter-spacing: 1px;font-size:18px;" type="text"  placeholder="First Name">
+                                        </form>
+                                        <form>
+                                            <input class="inputForEdit" style="border-bottom:1px solid rgb(32, 32, 32);letter-spacing: 1px;font-size:18px;" type="text"  placeholder="Last Name">
+                                        </form>
+                                        <form>
+                                            <input class="inputForEdit" style="border-bottom:1px solid rgb(32, 32, 32);letter-spacing: 1px;font-size:18px;" type="email"  placeholder="Email">
+                                        </form>
+                                        <form>
+                                            <input class="inputForEdit" style="border-bottom:1px solid rgb(32, 32, 32);letter-spacing: 1px;font-size:18px;" type="text"  placeholder="Role (optional)">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div style="margin-top:50px;">
+                                    <button class="saveButton" style="letter-spacing:2px;">SAVE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexForUsers">
+                    <div style="text-align:center;">
+                        <div style="padding:50px;">
+                            <img style="border-radius:50px;" src="assets/Boy.png" width="80px" height="80px">
+                            <div class="firstLine">YOU</div>
+                            <div class="secondLine">ADMIN</div>
+                            <div style="cursor:pointer;text-decoration:underline;margin-top:20px;" onclick="showWindow2()">Modify</div>
+                        </div>
+                    </div>
+                    <div style="text-align:center;">
+                        <div>
+                            <img style="border-radius:50px;" src="assets/Boy.png" width="80px" height="80px">
+                            <div class="firstLine">BILL THEMNOW</div>
+                            <div class="secondLine">FINANCE</div>
+                            <div style="cursor:pointer;text-decoration:underline;margin-top:20px;" onclick="showWindow2()">Modify</div>
+                        </div>
+                    </div>
+                    <div style="text-align:center;">
+                        <div>
+                            <img style="border-radius:50px;" src="assets/240979413_3075340749462382_6089974826731103654_n.png" width="80px" height="80px">
+                            <div class="firstLine">SCARLETT BARCHART</div>
+                            <div class="secondLine">BUSINESS ANALYST</div>
+                            <div style="cursor:pointer;text-decoration:underline;margin-top:20px;" onclick="showWindow2()">Modify</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top:100px;text-align:center;">
+                    <button class="inviteButton" style="letter-spacing:2px;" onclick="showWindow1()">INVITE USER</button>
+                </div>
+            </div>
+        </div> 
+        <script src="Users&Roles.js"></script>
+    </body>
+</html>

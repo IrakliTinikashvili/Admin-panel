@@ -1,0 +1,64 @@
+body{
+    margin:0px;
+}
+*{
+    box-sizing:border-box;
+}
+.stickyHeader{
+    position: sticky;
+    top:0;
+    padding:5px;
+    box-shadow:0px 0px 3px;
+    margin:-8px;
+    z-index:5;
+    background-color:white;
+}
+.flexForContent{
+    display:flex;
+    justify-content: space-between;
+    min-height:100vh;
+}
+.leftColumnHeaders{
+    color:rgb(212, 212, 212);
+    font-size:9px;
+    margin-top:8px;
+    font-family:Gilroy;
+}
+.leftColumnImages{
+    width:40px;
+    height:40px;
+    margin-top:30px;
+}
+.flexForHeader{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.prices{
+    width:9.28%;
+    font-size:16px;
+    font-weight:bold;
+}
+.showPages{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:10px;
+}
+.serviceList{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    height:30px;
+    font-size:18px;
+}
+.modal{
+    display:none;
+    position:fixed;
+    margin:auto;
+    z-index:10;
+    padding-top:50px;
+    width:100vw;
+    height:100vh;
+    background-color:rgb(0,0,0,0.4);
+}

@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>
+            Payments
+        </title>
+        <link rel="stylesheet" href="Payments.css">
+    </head>
+    <body>
+        <div class="flexForContent">
+            <div style="background-color:#272236;width:120px;">
+                <div style="display:flex;flex-direction: column;align-items: center;">
+                    <img  style="margin-top:18px;" src="assets/Bird.svg" width="60px" height="60px">
+                    <a href="Dashboard.html">
+                    <img  style="margin-top:60px;" src="assets/menu.svg" width="40px" height="40px">
+                    </a>
+                    <span class="leftColumnHeaders">DASHBOARD</span>
+                    <a href="Issues.html">
+                        <img  src="assets/bell.svg" class="leftColumnImages">
+                    </a>
+                    <span class="leftColumnHeaders">ISSUES</span>
+                    <a href="Payments.html">
+                        <img  src="assets/cash.svg" class="leftColumnImages">
+                    </a>
+                    <span class="leftColumnHeaders">PAYMENTS</span>
+                    <a href="Users&Roles.html">
+                        <img  src="assets/Clients.svg" class="leftColumnImages">
+                    </a>
+                    <span class="leftColumnHeaders">USERS & ROLES</span>
+                </div>
+            </div>
+            <div style="width:100%; display:flex;flex-direction:column;">
+                <div class="stickyHeader flexForHeader" style="width:100%;margin:0px;border:none;box-shadow:4px 4px 12px rgba(0, 0, 0, 0.1);height:80px;">
+                    <div style="padding:18px;font-family:Gilroy;">
+                        <div style="font-size:20px;">Thursday</div>
+                        <div style="font-size:20px;">November 2020</div>
+                    </div>
+                    <div style="padding:18px;font-family:Gilroy;display:flex;align-items:center;">
+                        <span style="font-size:14px;padding:15px;">HI JOHN!</span>
+                        <img  style="border-radius:50px;" src="assets/Boy.png" width="50px" height="50px">
+                    </div>
+                </div>
+                <div class="flexForFees">
+                    <div style="padding:20px;font-family:Gilroy;">
+                        <div class="firstFee">
+                            <img src="assets/cash.svg" width="25px" height="25px">
+                            <span style="font-family:Gilroy;margin-left:10px;color:#333333;">CHEZ MOI FEE</span>
+                        </div>
+                        <div id="hideModify1">
+                            <span style="font-size:40px;font-weight:bold;">$</span>
+                            <span style="font-size:40px;margin-left:10px;">0.95</span>
+                            <img  style="cursor:pointer;margin-left:10px;" src="assets/modify.svg" width="20px" height="20px" onclick="editPrice1()">
+                        </div>
+                        <div id="displaySave1" style="display:none;">
+                            <div class="flexForInputs">
+                                <span style="font-size:40px;font-weight:bold;">$</span>
+                                <form >
+                                    <input class="inputPrice" style="margin-left:10px;border-bottom:1px solid black;font-size:35px;width:80px;height:40px;" value="0.95">
+                                </form>
+                                <button style="font-size:16px;background-color:black;color:white;margin-left:10px;padding:10px;text-align:center;cursor:pointer;height:40px;border:none;" onclick="showModify1()">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding:20px;font-family:Gilroy;">
+                        <div class="firstFee">
+                            <img src="assets/cash.svg" width="25px" height="25px">
+                            <span style="font-family:Gilroy;margin-left:10px;color:#333333;">TRANSACTION FEE</span>
+                        </div>
+                        <div id="hideModify2">
+                            <span style="font-size:40px;font-weight:bold;">$</span>
+                            <span style="font-size:40px;margin-left:10px;">0.20</span>
+                            <img  style="cursor:pointer;margin-left:10px;" src="assets/modify.svg" width="20px" height="20px" onclick="editPrice2()">
+                        </div>
+                        <div id="displaySave2" style="display:none;">
+                            <div class="flexForInputs">
+                                <span style="font-size:40px;font-weight:bold;">$</span>
+                                <form >
+                                    <input class="inputPrice" style="margin-left:10px;border-bottom:1px solid black;font-size:35px;width:80px;height:40px;" value="0.20">
+                                </form>
+                                <button style="font-size:16px;background-color:black;color:white;margin-left:10px;padding:10px;text-align:center;cursor:pointer;height:40px;border:none;" onclick="showModify2()">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="Payments.js"></script>
+    </body>

@@ -1,0 +1,79 @@
+body{
+    margin:0px;
+}
+*{
+    box-sizing:border-box;
+}
+.stickyHeader{
+    position: sticky;
+    top:0;
+    padding:5px;
+    box-shadow:0px 0px 3px;
+    margin:-8px;
+    z-index:5;
+    background-color:white;
+}
+.flexForContent{
+    display:flex;
+    justify-content: space-between;
+    min-height:100vh;
+}
+.leftColumnHeaders{
+    color:rgb(212, 212, 212);
+    font-size:9px;
+    margin-top:8px;
+    font-family:Gilroy;
+}
+.leftColumnImages{
+    width:40px;
+    height:40px;
+    margin-top:30px;
+}
+.flexForHeader{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.flexForHr{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.uploadPhotosFlex{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:30px 180px;
+}
+.rejectButton{
+    width:330px;
+    height:60px;
+    border-radius:4px;
+    border:1px solid rgb(59, 0, 59); 
+    font-size:16px;
+    letter-spacing:2px;
+}
+.rejectButton:hover{
+    cursor:pointer;
+    background-color:rgb(196, 195, 195);
+}
+.verifyButton{
+    width:330px;
+    height:60px;
+    color:white;
+    border-radius:4px;
+    background-color:rgb(0, 0, 17);
+    border:none;
+    font-size:16px;
+    letter-spacing:2px;
+}
+.verifyButton:hover{
+    cursor:pointer;
+    background-color:rgb(70, 70, 70);
+}
+.flexForButtons{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0px 330px;
+}
